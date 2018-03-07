@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <title> Lab 3 Results </title>
+  </head>
+  <body>
+
+    <div id="sideBar"> 
+      <a href="index.html"> <div id="classTitle"> <p> EECS 280 <br> Section 31 </p> </div> </a>
+      <a href="lab01.html"><div class="labButtons"> <p> Lab 1 </p> </div> </a>
+      <a href="lab02.html"> <div class="labButtons"> <p> Lab 2 </p></div> </a>
+      <a href="lab03Landing.html"><div class="labButtons"> <p> Lab 3 </p> </div> </a> 
+      <a href="lab04Landing.html"><div class="labButtons"> <p> Lab 4 </p> </div> </a>
+      <a href="lab05Results.html"><div class="labButtons"> <p> Lab 5 </p></div></a>
+      <div class="labButtons"> <p> Lab 6 </p> </div> 
+      <div class="labButtons"> <p> Lab 7 </p> </div>
+      <div class="labButtons"> <p> Lab 8 </p></div>
+      <div class="labButtons"> <p> Lab 9 </p> </div> 
+      <div class="labButtons"> <p> Lab 10 </p> </div>
+      <div id="lastButton" class="labButtons"> <p> Lab 11 </p></div>
+    </div>
+
+    <div id="labSide">
+     
+      <div id="titleContainer"> <center> <p id="labTitle"> Lab 3 </p> </center> </div>
+      
+      <div id="multChoiceContainer"> 
+          <div id="spacer"> Exam-Style Questions </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q1: </strong> There is a null character at the end of every c-style string. </p>
+            <p class="answer"> <strong> Answer: </strong> True! </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q2: </strong> Given the command line input below, what is argc? </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> 7 </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q3: </strong> Given the command line input below, where's Waldo located?    </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> argv[5] </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q4: </strong> What does "cout << *argv[2] << endl;" print? </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> S </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q5: </strong> IO Objects MUST be passed by reference. </p>
+            <p class="answer"> <strong> Answer: </strong> True! </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q6: </strong> Use only tvPtr to change the value of tvShow to be your current favorite tv show. </p>
+            <center> <img src="lab3Dereference.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> *tvPtr = "The Office"; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q7: </strong> Without using tvShow explicitly, create another pointer that will hold the address of tvShow. (Hint: use tvPtr) </p> 
+            <center> <img src="lab3Dereference.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> string *anotherPtr = tvPtr; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q8: </strong> Create a pointer to tvPtr called ptr2ptr. </p>
+            <center> <img src="lab3Dereference.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> string **ptr2ptr = &tvPtr; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q9: </strong> Use only ptr2ptr to change the value of tvShow to be a tv show that you liked when you were little. </p>
+            <p class="answer"> <strong> Answer: </strong> **ptr2ptr = "The Wild Thornberrys";</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q10: </strong> Write a for loop that uses traversal by pointer to print out each string in theOffice array. Each string should be followed by a newline (including the last string).   </p>
+            <p style="margin-left: 30px;"> const int size = 5; <br> string theOffice[size] = {
+            "Michael", "Jim", "Pam", "Angela", "Dwight"} </p> 
+            <p class="answer"> <strong> Answer: for (int i = 0; i < size; i++) { <br>
+            cout << theOffice[i] << endl; <br> } </strong> </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q11: </strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at "thing" but could modify "thing"? </p>
+            
+            <div class="radio-toolbar">
+              <label><input type="radio" name="q11" value="true">const int * ptr = &thing;</label><br>
+              <label><input type="radio" name="q11" value="false">int * const ptr = &thing;</label><br>
+              <label><input type="radio" name="q11" value="true">const int * const ptr = &thing;</label><br>
+              <label><input type="radio" name="q11" value="false">int *ptr = &thing;</label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> int * const ptr = &thing; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q12: </strong> Which pointer would you want to use if you wanted to make sure that "thing" is never modified, but that the pointer can point elsewhere? </p>
+
+
+            <div class="radio-toolbar">
+              <label><input type="radio" name="q12" value="true">const int * ptr = &thing;</label><br>
+              <label><input type="radio" name="q12" value="false">int * const ptr = &thing;</label><br>
+              <label><input type="radio" name="q12" value="true">const int * const ptr = &thing;</label><br>
+              <label><input type="radio" name="q12" value="false">int *ptr = &thing;</label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> const int * ptr = &thing;</p>
+          </div>
+
+      </div>
+
+    </div>
+
+  	<div id="footer"> 
+
+  		<p> Copyright © Ashley Berg </p>
+
+  	</div>
+
+  </body>
+</html>

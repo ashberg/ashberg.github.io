@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <title> Lab 4 Results </title>
+  </head>
+  <body>
+
+    <div id="sideBar"> 
+      <a href="index.html"> <div id="classTitle"> <p> EECS 280 <br> Section 31 </p> </div> </a>
+      <a href="lab01.html"><div class="labButtons"> <p> Lab 1 </p> </div> </a>
+      <a href="lab02.html"> <div class="labButtons"> <p> Lab 2 </p></div> </a>
+      <a href="lab03Landing.html"><div class="labButtons"> <p> Lab 3 </p> </div> </a> 
+      <a href="lab04Landing.html"><div class="labButtons"> <p> Lab 4 </p> </div> </a>
+      <div class="labButtons"> <p> Lab 5 </p></div>
+      <div class="labButtons"> <p> Lab 6 </p> </div> 
+      <div class="labButtons"> <p> Lab 7 </p> </div>
+      <div class="labButtons"> <p> Lab 8 </p></div>
+      <div class="labButtons"> <p> Lab 9 </p> </div> 
+      <div class="labButtons"> <p> Lab 10 </p> </div>
+      <div id="lastButton" class="labButtons"> <p> Lab 11 </p></div>
+    </div>
+
+    <div id="labSide">
+     
+      <div id="titleContainer"> <center> <p id="labTitle"> Lab 4 </p> </center> </div>
+      
+      <div id="multChoiceContainer"> 
+          <div id="spacer"> Exam-Style Questions </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> QD: </strong> Suppose we have a base class Animal, and a derived class Bear (which inherits publicly from Animal). We can directly access the private member variables declared in Animal while inside the Bear class. </p>
+
+            <div class="radio-toolbar">
+              <label><input type="radio" name="QD" value="True"> True </label><br>
+              <label><input type="radio" name="QD" value="False"> False </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> False </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> QE: </strong> Having two constructors (with each taking in a different amount of arguments) inside the Baby class is an example of:</p>
+
+            <center> <img src="babyClass.png"> </center>
+
+            <div class="radio-toolbar">
+              <label><input type="radio" name="QE" value="Overloading"> Overloading </label><br>
+              <label><input type="radio" name="QE" value="Overriding"> Overriding </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> Overloading </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q1: </strong> Both classes and structs allow us to create heterogeneous compound objects. </p>
+
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q1" value="True"> True </label><br>
+              <label><input type="radio" name="Q1" value="False"> False </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> True </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q2: </strong> Stuff in structs is by default _________ whereas stuff in classes is by default _________. </p>
+          
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q2" value="public, private"> public, private </label><br>
+              <label><input type="radio" name="Q2" value="private, public"> private, public</label><br>
+              <label><input type="radio" name="Q2" value="private, private"> private, private </label><br>
+              <label><input type="radio" name="Q2" value="public, public"> public, public </label>
+            </div><br>
+
+
+            <p class="answer"> <strong> Answer: </strong> public, private </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q3: </strong> A constructor is executed automatically whenever a class-­type object is created. </p>
+            
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q3" value="True"> True </label><br>
+              <label><input type="radio" name="Q3" value="False"> False </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> True </p>
+
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q4: </strong> Which of the following are goals in the design of an Abstract Data Type (ADT)? </p>
+            
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q4" value="Separation of interface from implementation"> Separation of interface from implementation</label><br>
+              <label><input type="radio" name="Q4" value="Creating a piece of art that does not depict a person, place, or thing in the natural world."> Creating a piece of art that does not depict a person, place, or thing in the natural world.</label><br>
+              <label><input type="radio" name="Q4" value="Creating a summary of the contents of a book, article, or formal speech."> Creating a summary of the contents of a book, article, or formal speech. </label><br>
+              <label><input type="radio" name="Q4" value="Enforcing representation invariants"> Enforcing representation invariants </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> Separation of interface from implementation, Enforcing representation invariants  </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q5: </strong> How would the getFromCity() function look outside of the class declaration? </p> 
+            <center> <img src="flightClass.png"> </center>
+
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q5" value="string::Flight1 getFromCity() const { return fromCity; }"> string::Flight1 getFromCity() const { return fromCity; }</label> <br>
+              <label><input type="radio" name="Q5" value="Flight1::string getFromCity() const { return fromCity; }"> Flight1::string getFromCity() const { return fromCity; }</label><br>
+              <label><input type="radio" name="Q5" value="string getFromCity()::Flight1 const { return fromCity; }"> string getFromCity()::Flight1 const { return fromCity; } </label><br>
+              <label><input type="radio" name="Q5" value="string Flight::getFromCity() const { return fromCity; }"> string Flight::getFromCity() const { return fromCity; } </label>
+            </div><br>
+
+            <p class="answer"> <strong> Answer: </strong> string Flight::getFromCity() const { return fromCity; } </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q6: </strong> Implement the Flight1 constructor as it would appear outside of the class declaration. Assume that the meals are served on a plane if the flight is longer than 4 hours long. You MUST use a member initializer list where possible. Upload a screenshot of your solution. </p>
+            <center> <img src="flightClass.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> <br> <img src="flightClassConstructorImpl.png"> </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q7: </strong> Fill in just the blanks. </p>
+            <center> <img src="structFlightBlanks.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> <br> 
+              void Flight2_init(<strong> Flight2 *f </strong>, <strong> string from </strong>, <strong> string to </strong>, <strong> double durIn </strong>);</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q8: </strong> Implement the Flight_init function. Assume that the meals are served on a plane if the flight is longer than 4 hours long. Upload a screenshot of your solution.  </p>
+            <center> <img src="structFlightBlanks.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> <br> <img src="flightStructInitializerFunc.png"></p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q9: </strong> Lastly, for one hundred dollars: Where did Dunder meet Mifflin? </p>
+            <center><img style="width: 500px; height: 300px;" src="scottAndHolly.jpg"></center><br>
+            
+            <div class="radio-toolbar">
+              <label><input type="radio" name="Q9" value="on Easy Street"> on Easy Street</label> <br>
+              <label><input type="radio" name="Q9" value="a tour of Dartmouth College"> a tour of Dartmouth College.</label><br>
+              <label><input type="radio" name="Q9" value="they never met"> they never met</label><br>
+              <label><input type="radio" name="Q9" value="brushing their teeth"> brushing their teeth </label>
+            </div><br>
+
+
+            <p class="answer"> <strong> Answer: </strong> a tour of Dartmouth College! </p>
+          </div>
+      </div>
+
+    </div>
+
+  	<div id="footer"> 
+
+  		<p> Copyright © Ashley Berg </p>
+
+  	</div>
+
+  </body>
+</html>

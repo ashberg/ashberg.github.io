@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    <title> Lab 2 </title>
+  </head>
+  <body>
+
+    <div id="sideBar"> 
+      <a href="index.html"> <div id="classTitle"> <p> EECS 280 <br> Section 31 </p> </div> </a>
+      <a href="lab01.html"><div class="labButtons"> <p> Lab 1 </p> </div> </a>
+      <a href="lab02.html"> <div class="labButtons"> <p> Lab 2 </p></div> </a>
+      <a href="lab03Landing.html"><div class="labButtons"> <p> Lab 3 </p> </div> </a> 
+      <a href="lab04Landing.html"><div class="labButtons"> <p> Lab 4 </p> </div></a>
+      <a href="lab05Results.html"><div class="labButtons"> <p> Lab 5 </p></div></a>
+      <div class="labButtons"> <p> Lab 6 </p> </div> 
+      <div class="labButtons"> <p> Lab 7 </p> </div>
+      <div class="labButtons"> <p> Lab 8 </p></div>
+      <div class="labButtons"> <p> Lab 9 </p> </div> 
+      <div class="labButtons"> <p> Lab 10 </p> </div>
+      <div id="lastButton" class="labButtons"> <p> Lab 11 </p></div>
+    </div>
+
+    <div id="labSide">
+     
+      <div id="titleContainer"> <center> <p id="labTitle"> Lab 2 </p> </center> </div>
+      
+      <div id="multChoiceContainer"> 
+          <div id="spacer"> Exam-Style Questions </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q1: </strong> What is a pointer? </p>
+            <p class="answer"> <strong> Answer: </strong> an object that stores an address </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q2: </strong> Declare a pointer that points to eecs. </p>
+            <center> <img src="lab2DeclarePointer.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> int * ptr = &eecs; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q3: </strong> Using only the pointer that you just created,  change the value of eecs to 280.  </p>
+            <p class="answer"> <strong> Answer: </strong> *ptr = 280; </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q4: </strong> Arrays have a fixed size that must be known at compile time. </p>
+            <p class="answer"> <strong> Answer: </strong> True! </p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q5: </strong> Elements of a vector are contiguous in memory.  </p>
+            <p class="answer"> <strong> Answer: </strong> True!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q6: </strong> What's happening on line 3? </p>
+            <center> <img src="lab2AssignOrCopy1.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> You're doing an assignment!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q7: </strong> What's happening on line 2? </p> 
+            <center> <img src="lab2AssignOrCopy2.png"> </center>
+            <p class="answer"> <strong> Answer: </strong> You're making a copy!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q8: </strong> When you create a reference you create a new object. </p>
+            <p class="answer"> <strong> Answer: </strong> False!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q9: </strong> Unit testing is when you test an entire project. </p>
+            <p class="answer"> <strong> Answer: </strong> False!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q10: </strong> Recall from project 1 the functions inside of stats.cpp. Procedural Abstraction means that if you changed the implementation of any of the functions, the code that calls those functions does not need to change. </p>
+            <p class="answer"> <strong> Answer: </strong> True!</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q11: </strong> Which of the following are properties of Procedural Abstraction? </p>
+            
+            <ul> 
+              <li> local </li>
+              <li> compiled </li>
+              <li> declarative </li>
+              <li> procedural </li>
+              <li> substitutable </li>
+            </ul>
+            <p class="answer"> <strong> Answer: </strong> local and substitutable! </p>
+          </div>
+
+      </div>
+
+    </div>
+
+  	<div id="footer"> 
+
+  		<p> Copyright © Ashley Berg </p>
+
+  	</div>
+
+  </body>
+</html>
