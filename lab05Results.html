@@ -26,31 +26,31 @@
 
     <div id="labSide">
      
-      <div id="titleContainer"> <center> <p id="labTitle"> Lab 4 </p> </center> </div>
+      <div id="titleContainer"> <p id="labTitle"> Lab 5 </p> </div>
       
       <div id="multChoiceContainer"> 
           <div id="spacer"> Exam-Style Questions </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> QD: </strong> Suppose we have a base class Animal, and a derived class Bear (which inherits publicly from Animal). We can directly access the private member variables declared in Animal while inside the Bear class. </p>
+            <p class="question"> <strong> QA: </strong> Suppose we have a base class Animal, and a derived class Bear (which inherits publicly from Animal). We can directly access the private member variables declared in Animal while inside the Bear class. </p>
 
-            <div class="radio-toolbar">
-              <label><input type="radio" name="QD" value="True"> True </label><br>
-              <label><input type="radio" name="QD" value="False"> False </label>
-            </div><br>
+            <ul> 
+              <li> True </li>
+              <li> False</li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> False </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> QE: </strong> Having two constructors (with each taking in a different amount of arguments) inside the Baby class is an example of:</p>
+            <p class="question"> <strong> QB: </strong> Having two constructors (with each taking in a different amount of arguments) inside the Baby class is an example of:</p>
 
             <center> <img src="babyClass.png"> </center>
 
-            <div class="radio-toolbar">
-              <label><input type="radio" name="QE" value="Overloading"> Overloading </label><br>
-              <label><input type="radio" name="QE" value="Overriding"> Overriding </label>
-            </div><br>
+            <ul> 
+              <li> Overloading </li>
+              <li> Overriding </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> Overloading </p>
           </div>
@@ -58,10 +58,10 @@
           <div class="questionContainer"> 
             <p class="question"> <strong> Q1: </strong> Both classes and structs allow us to create heterogeneous compound objects. </p>
 
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q1" value="True"> True </label><br>
-              <label><input type="radio" name="Q1" value="False"> False </label>
-            </div><br>
+            <ul> 
+              <li> True </li>
+              <li> False</li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> True </p>
           </div>
@@ -69,13 +69,13 @@
           <div class="questionContainer"> 
             <p class="question"> <strong> Q2: </strong> Stuff in structs is by default _________ whereas stuff in classes is by default _________. </p>
           
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q2" value="public, private"> public, private </label><br>
-              <label><input type="radio" name="Q2" value="private, public"> private, public</label><br>
-              <label><input type="radio" name="Q2" value="private, private"> private, private </label><br>
-              <label><input type="radio" name="Q2" value="public, public"> public, public </label>
-            </div><br>
 
+            <ul> 
+              <li> public, private </li>
+              <li> private, public </li>
+              <li> private, private </li>
+              <li> public, public </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> public, private </p>
           </div>
@@ -83,10 +83,10 @@
           <div class="questionContainer"> 
             <p class="question"> <strong> Q3: </strong> A constructor is executed automatically whenever a class-­type object is created. </p>
             
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q3" value="True"> True </label><br>
-              <label><input type="radio" name="Q3" value="False"> False </label>
-            </div><br>
+            <ul> 
+              <li> True </li>
+              <li> False</li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> True </p>
 
@@ -95,12 +95,12 @@
           <div class="questionContainer"> 
             <p class="question"> <strong> Q4: </strong> Which of the following are goals in the design of an Abstract Data Type (ADT)? </p>
             
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q4" value="Separation of interface from implementation"> Separation of interface from implementation</label><br>
-              <label><input type="radio" name="Q4" value="Creating a piece of art that does not depict a person, place, or thing in the natural world."> Creating a piece of art that does not depict a person, place, or thing in the natural world.</label><br>
-              <label><input type="radio" name="Q4" value="Creating a summary of the contents of a book, article, or formal speech."> Creating a summary of the contents of a book, article, or formal speech. </label><br>
-              <label><input type="radio" name="Q4" value="Enforcing representation invariants"> Enforcing representation invariants </label>
-            </div><br>
+            <ul> 
+              <li> Separation of interface from implementation</li>
+              <li> Creating a piece of art that does not depict a person, place, or thing in the natural world. </li>
+              <li> Creating a summary of the contents of a book, article, or formal speech. </li>
+              <li> Enforcing representation invariants </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> Separation of interface from implementation, Enforcing representation invariants  </p>
           </div>
@@ -109,12 +109,13 @@
             <p class="question"> <strong> Q5: </strong> How would the getFromCity() function look outside of the class declaration? </p> 
             <center> <img src="flightClass.png"> </center>
 
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q5" value="string::Flight1 getFromCity() const { return fromCity; }"> string::Flight1 getFromCity() const { return fromCity; }</label> <br>
-              <label><input type="radio" name="Q5" value="Flight1::string getFromCity() const { return fromCity; }"> Flight1::string getFromCity() const { return fromCity; }</label><br>
-              <label><input type="radio" name="Q5" value="string getFromCity()::Flight1 const { return fromCity; }"> string getFromCity()::Flight1 const { return fromCity; } </label><br>
-              <label><input type="radio" name="Q5" value="string Flight::getFromCity() const { return fromCity; }"> string Flight::getFromCity() const { return fromCity; } </label>
-            </div><br>
+
+            <ul> 
+              <li> string::Flight1 getFromCity() const { return fromCity; } </li>
+              <li> Flight1::string getFromCity() const { return fromCity; } </li>
+              <li> string getFromCity()::Flight1 const { return fromCity; } </li>
+              <li> string Flight::getFromCity() const { return fromCity; } </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> string Flight::getFromCity() const { return fromCity; } </p>
           </div>
@@ -142,14 +143,13 @@
             <p class="question"> <strong> Q9: </strong> Lastly, for one hundred dollars: Where did Dunder meet Mifflin? </p>
             <center><img style="width: 500px; height: 300px;" src="scottAndHolly.jpg"></center><br>
             
-            <div class="radio-toolbar">
-              <label><input type="radio" name="Q9" value="on Easy Street"> on Easy Street</label> <br>
-              <label><input type="radio" name="Q9" value="a tour of Dartmouth College"> a tour of Dartmouth College.</label><br>
-              <label><input type="radio" name="Q9" value="they never met"> they never met</label><br>
-              <label><input type="radio" name="Q9" value="brushing their teeth"> brushing their teeth </label>
-            </div><br>
-
-
+            <ul>
+              <li> on Easy Street </li>
+              <li> a tour of Dartmouth College. </li>
+              <li> they never met </li>
+              <li> brushing their teeth </li>
+            </ul>
+            
             <p class="answer"> <strong> Answer: </strong> a tour of Dartmouth College! </p>
           </div>
       </div>

@@ -27,8 +27,6 @@ body {
 #titleContainer {
 	position: relative;
 	top: 100px;
-	/*width: 80%;*/
-	/*left: 10%;*/
 	margin: auto;
 	z-index: 10;
 	text-align: center;
@@ -61,6 +59,7 @@ body {
 #labSectionInfo {
 	display: inline-block;
 	margin-top: 100px;
+	margin-bottom: 0px;
 	padding: 50px;
 	font-size: 40px;
 	line-height: 75px;
@@ -70,6 +69,7 @@ body {
 
 #mainContainer {
 	width: 90%;
+	min-width: 700px;
 	position: absolute;
 	top: 175px;
 	left: 5%;
@@ -95,8 +95,10 @@ body {
 
 #vocabSection ul {
 	margin-left: 3%;
+	padding-right: 3%;
 	font-size: 20px;
 }
+
 
 #quizSection {
 	width: 80%;
@@ -107,6 +109,7 @@ body {
 	margin-top: 80px;
 	margin-bottom: 100px;
 	border: 10px dashed slategray;
+	font-weight: bold;
 }
 
 #take {
@@ -147,7 +150,7 @@ body {
 
 #results div p, #take div p {
 	margin: 0;
-	padding-top: 40px;
+	padding-top: 35px;
 	position: relative;
 	font-size: 20px;
 	color: black;

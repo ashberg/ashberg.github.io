@@ -93,26 +93,25 @@
           <div class="questionContainer"> 
             <p class="question"> <strong> Q11: </strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at "thing" but could modify "thing"? </p>
             
-            <div class="radio-toolbar">
-              <label><input type="radio" name="q11" value="true">const int * ptr = &thing;</label><br>
-              <label><input type="radio" name="q11" value="false">int * const ptr = &thing;</label><br>
-              <label><input type="radio" name="q11" value="true">const int * const ptr = &thing;</label><br>
-              <label><input type="radio" name="q11" value="false">int *ptr = &thing;</label>
-            </div><br>
+            <ul> 
+              <li> const int * ptr = &thing; </li>
+              <li> int * const ptr = &thing; </li>
+              <li> const int * const ptr = &thing; </li>
+              <li> int *ptr = &thing; </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> int * const ptr = &thing; </p>
           </div>
 
           <div class="questionContainer"> 
             <p class="question"> <strong> Q12: </strong> Which pointer would you want to use if you wanted to make sure that "thing" is never modified, but that the pointer can point elsewhere? </p>
-
-
-            <div class="radio-toolbar">
-              <label><input type="radio" name="q12" value="true">const int * ptr = &thing;</label><br>
-              <label><input type="radio" name="q12" value="false">int * const ptr = &thing;</label><br>
-              <label><input type="radio" name="q12" value="true">const int * const ptr = &thing;</label><br>
-              <label><input type="radio" name="q12" value="false">int *ptr = &thing;</label>
-            </div><br>
+            
+            <ul> 
+              <li> const int * ptr = &thing; </li>
+              <li> int * const ptr = &thing; </li>
+              <li> const int * const ptr = &thing; </li>
+              <li> int *ptr = &thing; </li>
+            </ul>
 
             <p class="answer"> <strong> Answer: </strong> const int * ptr = &thing;</p>
           </div>
