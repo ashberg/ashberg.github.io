@@ -262,6 +262,7 @@ input[type=radio] {
 	padding: 10px;
 	border: 2px solid green;
 	margin-left: 30px;
+	margin-right: 30px;
 }
 
 a {

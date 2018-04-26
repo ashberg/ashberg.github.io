@@ -55,8 +55,48 @@
 
           <div id="spacer"> Exam-Style Questions </div>
 
+
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q1: </strong>  Use only tvPtr to change the value of tvShow to be your current favorite tv show.</p>
+            <p class="question"> <strong> Q1: </strong> Given the command line input below, what is argc? </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <strong> Your Answer: </strong> <br> 
+            <div class="radio-toolbar">
+                  <label><input type="radio" name="q1" value="5"> 5 </label><br>
+                  <label><input type="radio" name="q1" value="6"> 6 </label><br>
+                  <label><input type="radio" name="q1" value="7"> 7 </label><br>
+                  <label><input type="radio" name="q1" value="8"> 8 </label>
+            </div>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q2: </strong> Given the command line input below, where's Waldo located?    </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <strong> Your Answer: </strong> <br> 
+            <div class="radio-toolbar">
+                  <label><input type="radio" name="q2" value="argv[4]"> argv[4] </label><br>
+                  <label><input type="radio" name="q2" value="argv[5]"> argv[5] </label><br>
+                  <label><input type="radio" name="q2" value="argv[6]"> argv[6] </label><br>
+                  <label><input type="radio" name="q2" value="argv[3]"> argv[3] </label>
+            </div>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q3: </strong> What does "cout << *argv[2] << endl;" print? </p>
+            <center> <img src="wheresWaldoCommandLine.png"> </center>
+            <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q4: </strong> IO Objects MUST be passed by reference. </p>
+            <strong> Your Answer: </strong> <br> 
+            <div class="radio-toolbar">
+                  <label><input type="radio" name="q4" value="true">True</label><br>
+                  <label><input type="radio" name="q4" value="false">False</label>
+                </div>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q5: </strong>  Use only tvPtr to change the value of tvShow to be your current favorite tv show.</p>
             <center><img src="lab3Dereference.png"></center>
             <form> 
                 <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
@@ -64,7 +104,7 @@
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q2: </strong>  Without using tvShow explicitly, create another pointer that will hold the address of tvShow. (Hint: use tvPtr) </p>
+            <p class="question"> <strong> Q6: </strong>  Without using tvShow explicitly, create another pointer that will hold the address of tvShow. (Hint: use tvPtr) </p>
             <center><img src="lab3Dereference.png"></center>
             <form> 
                 <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
@@ -72,7 +112,7 @@
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q3: </strong> Create a pointer to tvPtr called ptr2ptr. </p>
+            <p class="question"> <strong> Q7: </strong> Create a pointer to tvPtr called ptr2ptr. </p>
             <center><img src="lab3Dereference.png"></center>
             <form> 
                 <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
@@ -80,7 +120,7 @@
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q4: </strong> Use only ptr2ptr to change the value of tvShow to be a tv show that you liked when you were little. </p>
+            <p class="question"> <strong> Q8: </strong> Use only ptr2ptr to change the value of tvShow to be a tv show that you liked when you were little. </p>
             <center><img src="lab3Dereference.png"></center>
             <form> 
                 <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
@@ -88,34 +128,47 @@
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q5: </strong> Looking up the value of an array will yield a pointer to its first element. </p>
+            <p class="question"> <strong> Q9: </strong> Write a for loop that uses traversal by pointer to print out each string in theOffice array. Each string should be followed by a newline (including the last string).   </p>
+            <center><img src="lab3TraversalByPtr.png"></center>
+            <form> 
+                <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
+            </form>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q10:</strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at thing but could modify thing? </p>
+            <form> 
+                <strong> Your Answer: </strong> <br> 
+                <div class="radio-toolbar">
+                  <label><input type="radio" name="q10" value="a">const int * ptr = &thing;</label><br>
+                  <label><input type="radio" name="q10" value="b">int * const ptr = &thing;</label><br>
+                  <label><input type="radio" name="q10" value="c">const int * const ptr = &thing;</label><br>
+                  <label><input type="radio" name="q10" value="d">int *ptr = &thing;</label>
+                </div>
+            </form>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q11: </strong> Which pointer would you want to use if you wanted to make sure that "thing" is never modified, but that the pointer can point elsewhere? </p>
+            <form> 
+                <strong> Your Answer: </strong> <br> 
+                <div class="radio-toolbar">
+                  <label><input type="radio" name="q11" value="a">const int * ptr = &thing;</label><br>
+                  <label><input type="radio" name="q11" value="b">int * const ptr = &thing;</label><br>
+                  <label><input type="radio" name="q11" value="c">const int * const ptr = &thing;</label><br>
+                  <label><input type="radio" name="q11" value="d">int *ptr = &thing;</label>
+                </div>
+            </form>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q12: </strong> Looking up the value of an array will yield a pointer to its first element. </p>
             <form> 
                 <strong> Your Answer: </strong> <br> 
                 <div class="radio-toolbar">
                   <label><input type="radio" name="q5" value="true">True</label><br>
                   <label><input type="radio" name="q5" value="false">False</label>
                 </div>
-            </form>
-          </div>
-
-          <div class="questionContainer"> 
-            <p class="question"> <strong> Q6:</strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at thing but could modify thing? </p>
-            <form> 
-                <strong> Your Answer: </strong> <br> 
-                <div class="radio-toolbar">
-                  <label><input type="radio" name="q6" value="true">const int * ptr = &thing;</label><br>
-                  <label><input type="radio" name="q6" value="false">int * const ptr = &thing;</label><br>
-                  <label><input type="radio" name="q6" value="true">const int * const ptr = &thing;</label><br>
-                  <label><input type="radio" name="q6" value="false">int *ptr = &thing;</label>
-                </div>
-            </form>
-          </div>
-
-          <div class="questionContainer"> 
-            <p class="question"> <strong> Q7: </strong> Write a for loop that uses traversal by pointer to print out each string in theOffice array. Each string should be followed by a newline (including the last string).   </p>
-            <center><img src="lab3TraversalByPtr.png"></center>
-            <form> 
-                <strong> Your Answer: </strong> <br> <input type="text" name="studentAnswer"> 
             </form>
           </div>
 
