@@ -32,64 +32,64 @@
           <div id="spacer"> Exam-Style Questions </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q1: </strong> There is a null character at the end of every c-style string. </p>
+            <p class="question"> <strong> QA: </strong> There is a null character at the end of every c-style string. </p>
             <p class="answer"> <strong> Answer: </strong> True! </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q2: </strong> Given the command line input below, what is argc? </p>
+            <p class="question"> <strong> Q1: </strong> Given the command line input below, what is argc? </p>
             <center> <img src="wheresWaldoCommandLine.png"> </center>
             <p class="answer"> <strong> Answer: </strong> 7 </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q3: </strong> Given the command line input below, where's Waldo located?    </p>
+            <p class="question"> <strong> Q2: </strong> Given the command line input below, where's Waldo located?    </p>
             <center> <img src="wheresWaldoCommandLine.png"> </center>
             <p class="answer"> <strong> Answer: </strong> argv[5] </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q4: </strong> What does "cout << *argv[2] << endl;" print? </p>
+            <p class="question"> <strong> Q3: </strong> What does "cout << *argv[2] << endl;" print? </p>
             <center> <img src="wheresWaldoCommandLine.png"> </center>
             <p class="answer"> <strong> Answer: </strong> S </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q5: </strong> IO Objects MUST be passed by reference. </p>
+            <p class="question"> <strong> Q4: </strong> IO Objects MUST be passed by reference. </p>
             <p class="answer"> <strong> Answer: </strong> True! </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q6: </strong> Use only tvPtr to change the value of tvShow to be your current favorite tv show. </p>
+            <p class="question"> <strong> Q5: </strong> Use only tvPtr to change the value of tvShow to be your current favorite tv show. </p>
             <center> <img src="lab3Dereference.png"> </center>
             <p class="answer"> <strong> Answer: </strong> *tvPtr = "The Office"; </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q7: </strong> Without using tvShow explicitly, create another pointer that will hold the address of tvShow. (Hint: use tvPtr) </p> 
+            <p class="question"> <strong> Q6: </strong> Without using tvShow explicitly, create another pointer that will hold the address of tvShow. (Hint: use tvPtr) </p> 
             <center> <img src="lab3Dereference.png"> </center>
             <p class="answer"> <strong> Answer: </strong> string *anotherPtr = tvPtr; </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q8: </strong> Create a pointer to tvPtr called ptr2ptr. </p>
+            <p class="question"> <strong> Q7: </strong> Create a pointer to tvPtr called ptr2ptr. </p>
             <center> <img src="lab3Dereference.png"> </center>
             <p class="answer"> <strong> Answer: </strong> string **ptr2ptr = &tvPtr; </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q9: </strong> Use only ptr2ptr to change the value of tvShow to be a tv show that you liked when you were little. </p>
+            <p class="question"> <strong> Q8: </strong> Use only ptr2ptr to change the value of tvShow to be a tv show that you liked when you were little. </p>
             <p class="answer"> <strong> Answer: </strong> **ptr2ptr = "The Wild Thornberrys";</p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q10: </strong> Write a for loop that uses traversal by pointer to print out each string in theOffice array. Each string should be followed by a newline (including the last string).   </p>
+            <p class="question"> <strong> Q9: </strong> Write a for loop that uses traversal by pointer to print out each string in theOffice array. Each string should be followed by a newline (including the last string).   </p>
             <center> <img src="officeArr.png"> </center>
             <p class="answer"> <strong> Answer: </strong> <br> <img src="officeArrAnswer.png"> </p>
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q11: </strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at "thing" but could modify "thing"? </p>
+            <p class="question"> <strong> Q10: </strong> Which pointer would you want to use if you wanted to make sure that the pointer would always point at "thing" but could modify "thing"? </p>
             
             <ul> 
               <li> const int * ptr = &thing; </li>
@@ -102,7 +102,7 @@
           </div>
 
           <div class="questionContainer"> 
-            <p class="question"> <strong> Q12: </strong> Which pointer would you want to use if you wanted to make sure that "thing" is never modified, but that the pointer can point elsewhere? </p>
+            <p class="question"> <strong> Q11: </strong> Which pointer would you want to use if you wanted to make sure that "thing" is never modified, but that the pointer can point elsewhere? </p>
             
             <ul> 
               <li> const int * ptr = &thing; </li>
@@ -112,6 +112,11 @@
             </ul>
 
             <p class="answer"> <strong> Answer: </strong> const int * ptr = &thing;</p>
+          </div>
+
+          <div class="questionContainer"> 
+            <p class="question"> <strong> Q12: </strong> Looking up the value of an array will yield a pointer to its first element. </p>
+            <p class="answer"> <strong> Answer: </strong> True! </p>
           </div>
 
       </div>
